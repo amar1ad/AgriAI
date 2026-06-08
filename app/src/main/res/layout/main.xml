@@ -1,0 +1,110 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FDFCF7">
+	<LinearLayout
+		android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="65dp"
+		android:background="#386641"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:elevation="4dp"
+		android:paddingHorizontal="16dp">
+		<ImageView
+			android:id="@+id/imageview3"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:src="@drawable/agriculture"
+			android:scaleType="fitCenter" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_weight="1"
+			android:layout_marginStart="12dp">
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="مساعد عمار الزراعي"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF" />
+			<TextView
+				android:id="@+id/textview4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="متصل الآن • خبير المحاصيل"
+				android:textSize="11sp"
+				android:textColor="#BCF4B5" />
+		</LinearLayout>
+		<ImageView
+			android:id="@+id/imageview4"
+			android:layout_width="28dp"
+			android:layout_height="28dp"
+			android:src="@drawable/icon_density_medium_round"
+			android:scaleType="fitCenter"
+			app:tint="#FFFFFF" />
+	</LinearLayout>
+	<ListView
+		android:id="@+id/listview_chat"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="10dp"
+		android:choiceMode="none"
+		android:divider="@null"
+		android:paddingHorizontal="8dp"
+		android:stackFromBottom="true"
+		android:transcriptMode="alwaysScroll"
+		android:layout_above="@id/input_card"
+		android:layout_below="@id/header"
+		tools:listitem="@layout/chat_item" />
+	<LinearLayout
+		android:id="@+id/input_card"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:background="#FFFFFF"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:elevation="12dp"
+		android:layout_alignParentBottom="true">
+		<ImageButton
+			android:id="@+id/button_image"
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:padding="10dp"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:src="@drawable/sickle"
+			android:scaleType="fitCenter"
+			app:tint="#6A994E" />
+		<EditText
+			android:id="@+id/edittext_msg"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textSize="15sp"
+			android:textColor="#333333"
+			android:hint="اسأل عن محصولك..."
+			android:textColorHint="#A0A0A0"
+			android:layout_weight="1"
+			android:layout_marginHorizontal="8dp"
+			android:minHeight="45dp"
+			android:paddingHorizontal="16dp"
+			android:paddingVertical="10dp" />
+		<ImageButton
+			android:id="@+id/button_send"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:padding="12dp"
+			android:background="@drawable/bg_circle_button"
+			android:src="@drawable/icon_send_round"
+			android:scaleType="centerInside"
+			android:elevation="2dp"
+			app:tint="#FFFFFF" />
+	</LinearLayout>
+</RelativeLayout>
