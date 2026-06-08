@@ -1,0 +1,68 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="8dp">
+	<LinearLayout
+		android:id="@+id/linear13"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="12dp"
+		android:orientation="vertical"
+		android:elevation="1dp">
+		<TextView
+			android:id="@+id/text_message_body"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="هنا يظهر نص الرد الزراعي..."
+			android:textSize="16sp"
+			android:textColor="#2D2D2D"
+			android:focusable="false" />
+		<LinearLayout
+			android:id="@+id/linear14"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:orientation="horizontal"
+			android:gravity="end">
+			<ImageView
+				android:id="@+id/btn_retry"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:src="@drawable/icon_refresh_round"
+				android:scaleType="fitCenter"
+				android:focusable="false"
+				android:layout_marginEnd="12dp"
+				app:tint="#888888" />
+			<ImageView
+				android:id="@+id/btn_like"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:src="@drawable/icon_thumb_up_round"
+				android:scaleType="fitCenter"
+				android:focusable="false"
+				android:layout_marginEnd="12dp"
+				app:tint="#888888" />
+			<ImageView
+				android:id="@+id/btn_share"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:src="@drawable/icon_share_round"
+				android:scaleType="fitCenter"
+				android:focusable="false"
+				android:layout_marginEnd="12dp"
+				app:tint="#888888" />
+			<ImageView
+				android:id="@+id/btn_copy"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:src="@drawable/icon_content_copy_round"
+				android:scaleType="fitCenter"
+				android:focusable="false"
+				app:tint="#888888" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
